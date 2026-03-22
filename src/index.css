@@ -1,0 +1,16 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+/* Spinner animation (if not using Tailwind) */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-top-color: #f97316; /* Tailwind's orange-500 */
+  animation: spin 1s linear infinite;
+}
+
